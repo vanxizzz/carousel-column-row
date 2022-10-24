@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel -vanxizzz</title>
+</head>
+
+<body>
+
+    <div id="slide-wrapper" style="width: 300px;height:300px;"></div>
+    <br>
+    <div class="test" style="width: 300px;height:300px;"></div>
+
+    <script type="module">
+        import Carousel from './index.js'
+        let c1 = new Carousel();
+        c1.create('#slide-wrapper', {
+            datas: [
+                { href: '#adad1', src: './imgs/1.gif' },
+                { href: '#adad2', src: './imgs/2.gif' },
+                { href: '#adad3', src: './imgs/3.gif' },
+            ],
+            direction: 'column',
+            lastArrow: {
+                innerText: '悟',
+            },
+            duration: 1000,
+            interval: 2000,
+            isAuto: true,
+            mouseSlide: true,
+            curIndex: 0
+        });
+
+        let c2 = new Carousel();
+        c2.create('.test', {
+            datas: [
+                { href: '#adad1', src: './imgs/1.gif' },
+                { href: '#adad2', src: './imgs/2.gif' },
+                { href: '#adad3', src: './imgs/3.gif' },
+            ],
+            direction: 'row'
+        })
+    </script>
+</body>
+
+</html>

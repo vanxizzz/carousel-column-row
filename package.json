@@ -1,0 +1,12 @@
+{
+  "name": "carousel-column-row",
+  "version": "1.0.0",
+  "description": "- temp.html => **使用例子**\r - index.js => **轮播图源码**\r - initStyle.js => **一些css样式初始化**\r - myAnimation.js => **动画函数**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "vanxizzz",
+  "license": "ISC"
+}
